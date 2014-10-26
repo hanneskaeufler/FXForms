@@ -2937,7 +2937,7 @@ static void FXFormPreprocessFieldDictionary(NSMutableDictionary *dictionary)
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         textView = [[UITextView alloc] init];
-        textView.font = [UIFont systemFontOfSize:17];
+        textView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0];
     });
     
     textView.text = [field fieldDescription] ?: @" ";
